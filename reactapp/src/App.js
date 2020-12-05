@@ -1,23 +1,17 @@
-import React from 'react';
+import React, { Component } from 'react';
 import Navbar from './Components/Navbar';
-import User from './Components/User';
 import './App.css';
+import Users from './Components/Users';
 
-function App() {
+class App extends Component{
+render() {
   return (
     <div className="container">
           <Navbar title="User App"/>
           <hr/>
-          <User
-          name = "Oguzhan Osma"
-          department = "NRD1121"
-          salary ="4753 TRY"/>
-          <User
-          name = "Ayşe Fatma"
-          department = "NRD1121"
-         />
+          <Users/>
     </div> 
   );
 }
-
+}
 export default App;
