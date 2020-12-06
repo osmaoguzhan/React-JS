@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 //import propTypes from 'prop-types'
 import UserConsumer from '../context';
+import axios from 'axios';
 
 //rcc yazıp taba basınca eklenti yüklü ise otomatik gelir
 class User extends Component {
@@ -23,7 +24,10 @@ class User extends Component {
             }
         )
     }
-
+    componentWillUnmount = async() => {
+        const {id} = this.props;
+        await axios.delete("http://localhost:3004/users/" + id);
+    }
     render() {
         //Destructing
         const {name,department,salary} = this.props;

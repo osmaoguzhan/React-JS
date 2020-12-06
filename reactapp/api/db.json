@@ -1,0 +1,16 @@
+{
+  "users": [
+    {
+      "name": "Oguzhan Osma",
+      "department": "NRD1121",
+      "salary": "4753",
+      "id": "1"
+    },
+    {
+      "name": "Ayşe Fatma",
+      "department": "NRD1121",
+      "salary": "4753",
+      "id": "2"
+    }
+  ]
+}
